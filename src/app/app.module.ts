@@ -4,11 +4,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LoremIpsumComponent } from './utils/lorem-ipsum/lorem-ipsum.component';
+import { BaseModalComponent } from './modals/base-modal/base-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
+    LoremIpsumComponent,
+    BaseModalComponent
   ],
   imports: [
     BrowserModule,
@@ -16,6 +20,7 @@ import { LayoutComponent } from './layout/layout.component';
     NgbModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [BaseModalComponent]
 })
 export class AppModule { }
